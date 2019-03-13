@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>login</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="js/java.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script language="JavaScript">
+  function showInput() {
+      document.getElementById('d').innerHTML = document.getElementById("username").value;
+      document.getElementById('d1').innerHTML = document.getElementById("password").value;
+  }
+</script>
+
+</head>
+<body background="img/2.jpg" > 
+
+
+    
+  <div class="container">
+    <div class=" row">
+        <div class="margin col-sm-6 col-md-6 col-lg-6 mx-auto">         
+            <img class="align4" src="img/back.jpg" >
+            <div class="align5 carousel-caption">
+              <h1>Welcome to co</h1>
+              <h5>I dont know, call Everything</h5>
+             
+              
+            </div>           
+          </div>
+      <div class="align1 col-sm-6 col-md-6 col-lg-6 mx-auto">
+        <div class="align2 card card-signin my-5">
+          <div class="align3 card-body" style="background-color:white">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form name="myForm" onsubmit="return validateForm()" method="post" class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="username" name="username" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email address</label>
+              </div>
+              <div class="form-label-group">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+                                       
+            </form>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" onclick="showInput();" >Sign in</button> 
+            <label>Entered Username: </label>
+            <text id='d'></text> <hr>
+            <label>Entered Password: </label>
+  <text id='d1'></text>
+          </div>
+          
+        </div>
+        
+      </div>     
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
